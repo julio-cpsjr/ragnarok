@@ -1,0 +1,30 @@
+.form_form {
+    border: solid;
+    border-radius: 1.5em;
+    padding: 1em 2em 1em 2em;
+    background-color: #222;
+    color: #fff;
+    max-width: 40%;
+}
+
+label{
+    font-weight: bold;
+
+}
+
+.btn_formulario{
+    border-radius: .5em;
+    background-color: #341e96;
+    border-color: #fff;
+    color: #fff;
+    justify-content: center;
+    padding: 1em 1.5em 1em 1.5em;
+    font-weight: bold;
+}
+
+.btn_formulario:hover{
+    background-color: #ffbb33;
+    border-color: #fff;
+    color: #222;
+}
+

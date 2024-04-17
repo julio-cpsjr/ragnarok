@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.module.css')}}">
+<div>
+    <div class="titulo">
+        <img src="{{url_for('static',filename='img/abinbev.jpg')}}" alt="abinbev" >
+        <img src="{{url_for('static',filename='img/brewtech.jpg')}}" alt="brewtech" >
+    </div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages%}
+            <div  class="d-flex justify-content-center">
+                    {% for message in messages %}
+                      {% if message == "Registro realizado com sucesso!" %}
+                      <div id="div_flash" class="alert alert-success" >
+                        {{ message}}
+                      </div>
+                      {% endif%}
+                    {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    <a class="button_link" href="{{url_for('index')}}">Página Inicial</a>
+    <div class="titulo_ragnar">
+        <h2> Obrigado por realizar o registro em nossa plataforma</h2>
+        <h2>Vá para a Engenharia e entre em contato com o Carlos ou Rogério!</h2>
+    </div>
+</div>
+
+{% endblock%}

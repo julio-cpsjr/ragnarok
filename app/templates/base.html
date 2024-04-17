@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.module.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>Ragnarok</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/Sentinel_Icon.png') }}" type="image/x-icon">
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <script>
+        const myInterval = setTimeout(removeFlash, 2000);
+      
+        function removeFlash(){
+         const element = document.getElementById('div_flash');
+         if (element){
+           element.remove();
+         }
+       }
+      </script>
+    <footer class="footer"> 
+        <p class="copy_right">
+           <span><img src="{{ url_for('static', filename='img/Sentinel_Icon.png') }}" alt="sentinel" class="sentinel"> Ragnarok</span>  &copy; 2023
+        </p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</body>
+</html>

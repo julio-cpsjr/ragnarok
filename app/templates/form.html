@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="{{url_for('static', filename='css/form.module.css')}}">
+
+<form action="" method="post" class="form_form">
+    <h3>Formulário de Entrada de Computadores</h3>
+    {{ form.csrf_token }}
+    <div class="form-group">
+        <label>Nome</label>
+        {{ form.name(class="form-control", placeholder="Insira seu Nome")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>CPF</label>
+        {{ form.number_cpf(class="form-control", placeholder="Insira seu CPF")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Hostname</label>
+        {{ form.hostname(class="form-control", placeholder="Insira o Hostname")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Modelo da Máquina</label>
+        {{ form.machine_model(class="form-control", placeholder="Insira o Modelo da máquina")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Mac Address</label>
+        {{ form.mac_address(class="form-control", placeholder="Insira o Mac Address")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Área</label>
+        <br/>
+        <select id="{{ form.area}}" class="form-select" aria-label="Default select example">
+            <option disabled="true" selected>Selecione a área</option>
+            <option value="Packaging">Packaging</option>
+            <option value="Processo">Processo</option>
+            <option value="Utilidades">Utilidades</option>
+            <option value="Meio_Ambiente">Meio Ambiente</option>
+        </select>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label>Antivírus</label>
+        {{ form.antivirus(class="form-control", placeholder="Insira o Antivírus")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Atualização</label>
+        {{ form.atualizacao(class="form-control", placeholder="Insira a Atualização")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Empresa</label>
+        {{ form.name_job(class="form-control", placeholder="Insira o nome da empresa")}}
+        <br/>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        {{ form.email(class="form-control", placeholder="Insira o seu email")}}
+        <br/>
+    </div>
+    <br/>
+    <button type="submit" class="btn_formulario"> Enviar Formulário</button>
+</form>

@@ -1,0 +1,49 @@
+.titulo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.brewtech{
+    max-width: 100%;
+}
+
+.abinbev{
+    max-width: 20%;
+}
+
+.form_brewtech{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.titulo_ragnarok{
+    margin-top: 2em;
+}
+
+.titulo_ragnar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.button_link{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid ;
+    border-radius: .5em;
+    background-color: rgb(25, 25, 110);
+    color: #fff;
+    max-width: 7%;
+    margin-left: 1em;
+}
+
+.button_link:hover{
+    background-color:#ffbb33;
+    color: #222;
+}

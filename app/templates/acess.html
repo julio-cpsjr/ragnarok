@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/acess.module.css')}}">
+<h2>Validação de Acessos</h2>
+<form action="" method="post">
+    <div class="insert_filter" >
+        <label> Pesquisar: </label>
+        <div class="input-group mb-3">
+            {{ form.filter(class="form-control", placeholder="Digite o nome para checar")}}
+            <button class="btn btn-outline-secondary" type="submit">Check</button>
+        </div>
+    </div>
+    <br/>
+</form>
+<br/>
+<div id="resp" class="resp">
+    <label >Nome:  </label>
+    <div>
+        {{ user_name }}
+    </div>
+    <br/>
+    <label >Confirmação:  </label>
+    <div>
+        {% if confirm == True %}
+        <p> Validado </p>
+        {%endif%}
+        {% if confirm == False %}
+        <p> Não Validado </p>
+        {%endif%}
+    </div>
+    <br/>
+    <a class="btn_a" href="/update/{{ user_name | safe }}"> Validar</a>    
+</div>
+<br/>
+<br/>

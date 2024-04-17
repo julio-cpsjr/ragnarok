@@ -1,0 +1,36 @@
+html{
+    justify-content: center;
+}
+
+body{
+    min-width: 100vh;
+    background-image: url("../img/cyber.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+}
+
+
+.copy_right{
+    margin-top: 2em;
+    padding-left: 2.5em;
+    font-weight: bold;
+}
+
+.copy_right span{
+    font-weight: bold;
+    color: #5833ff;
+}
+
+.sentinel{
+    width: 5%;
+}
+
+footer{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25em;
+}

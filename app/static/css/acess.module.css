@@ -1,0 +1,82 @@
+.insert_filter{
+    max-width: 35%;
+    margin-left: 1em;
+}
+
+.insert_filter button{
+    background-color: #ffbb33;
+    color: #222;
+}
+
+.insert_filter button:hover{
+    background-color:  rgb(66, 43, 151);
+    color: #fff;
+}
+.resp{
+    border-radius: .5em;
+    border-color: #222;
+    border: 1px solid;
+    padding: 1.5em 0 .5em 0;
+    background-color: rgb(25, 17, 56);
+    color: #fff;
+}
+
+#resp label{
+    margin-left: .5em;
+    margin-top: .5em;
+    font-weight: bold;
+}
+
+#resp div{
+    margin-left: .5em;
+    margin-top: .5em;
+}
+
+
+#resp{
+    max-width: 60%;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.insert_confirm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn_confirmacao{
+    margin-left: 1em;
+    border-radius: .5em;
+    background-color: rgb(66, 43, 151);
+    color: #fff;
+}
+
+.btn_confirmacao:hover{
+    background-color: #ffbb33;
+    color: #222;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_a {
+    text-decoration: none;
+    border-radius: .5em;
+    border: 1px solid #fff;
+    padding: .5em .5em .5em .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.btn_a:hover{
+    background-color: #ffbb33;
+    color: #222;
+}

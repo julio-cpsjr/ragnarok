@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.module.css')}}">
+    <div class="titulo">
+        <img src="{{url_for('static', filename='img/abinbev_icon.png')}}" alt="abinbev" class="abinbev" >
+        <h2 class="titulo_ragnarok"> Bem vindo ao Ragnarok</h2>
+        <img src="{{url_for('static', filename='img/brewtech.jpg')}}" alt="brewtech" class="brewtech">
+    </div>
+    <br/>
+    {% with messages = get_flashed_messages() %}
+    {% if messages%}
+        <div class="d-flex justify-content-center">
+            {% for message in messages %}
+              {% if message == "Aconteceu um erro inesperado, por favor preencha novamente!" %}
+              <div id="div_flash" class="alert alert-danger" role="alert" >
+                {{ message}}
+              </div>
+              {% endif%}
+            {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    {% endwith %}
+    <div class="form_brewtech">
+        {% include "form.html"%}
+    </div>
+{% endblock %}

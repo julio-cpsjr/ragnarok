@@ -1,0 +1,16 @@
+.navtabsteam{
+    margin-left: 1.5em;
+}
+.nav-link {
+  color: #fff;
+  background-color: #3325b3;
+}
+
+.navtabsteam button:hover{
+  background-color: #ffbb33;
+  color: black;
+}
+
+button{
+  font-weight: bold;
+}
